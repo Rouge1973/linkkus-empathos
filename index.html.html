@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#102c33">
+<meta name="description" content="Les Chroniques de l’Aurore : découvrez Empathos, une histoire à vivre à votre rythme. Une expérience narrative libre par Linkkus.">
+<title>Empathos · Les Chroniques de l’Aurore — Linkkus</title>
+<style>
+:root{--night:#102c33;--deep:#071b25;--cream:#f9f3e8;--ink:#243a3a;--gold:#d8b97e;--teal:#437c79;--line:#d9d0c2}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.65}
+a{color:inherit}button{font:inherit;cursor:pointer}.hero{background:radial-gradient(ellipse at 65% 15%,rgba(86,185,158,.34),transparent 40%),radial-gradient(ellipse at 20% 45%,rgba(108,88,178,.25),transparent 38%),linear-gradient(160deg,#071925,#173c46 70%,#102c33);color:#f7f0e5;min-height:88vh;position:relative;overflow:hidden;display:flex;flex-direction:column}
+.hero:before{content:"";position:absolute;width:130%;height:220px;left:-10%;top:18%;transform:rotate(-13deg);border-radius:50%;filter:blur(28px);background:linear-gradient(90deg,transparent,rgba(76,207,168,.11),rgba(154,124,215,.18),transparent);pointer-events:none}
+.top{position:relative;display:flex;align-items:center;justify-content:space-between;max-width:1060px;width:100%;margin:auto auto 0;padding:25px 24px}
+.brand{display:flex;gap:13px;align-items:center;text-decoration:none}.brandname{font-size:1.25rem;font-weight:750;letter-spacing:.19em}.brand small{display:block;font-size:.66rem;letter-spacing:.1em;color:#e8cfa3}
+.hero-main{position:relative;max-width:830px;margin:auto;padding:85px 25px 120px;text-align:center}.eyebrow{letter-spacing:.25em;text-transform:uppercase;font-size:.72rem;font-weight:700;color:#e5c894}
+h1,h2,h3{font-family:Georgia,"Times New Roman",serif;font-weight:400}h1{font-size:clamp(3.2rem,8vw,6rem);line-height:1.04;margin:24px 0}.hero-main .intro{font-size:clamp(1.1rem,2.5vw,1.35rem);max-width:580px;margin:22px auto 32px;color:#f1e9df}.tag{border:1px solid #b7ad9470;border-radius:99px;padding:8px 14px;font-size:.78rem;display:inline-block;letter-spacing:.05em}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border-radius:99px;padding:13px 25px;text-decoration:none;font-weight:650;border:1px solid transparent;transition:transform .15s,background .15s}.btn:hover{transform:translateY(-2px)}.btn-gold{background:var(--gold);color:#152a2c}.btn-outline{border-color:#c7b79b;background:transparent;color:inherit}.btn-dark{background:var(--night);color:#fff}.philosophy{max-width:660px;margin:28px auto 0;padding:23px 26px;border:1px solid rgba(216,185,126,.35);border-radius:16px;background:rgba(7,27,37,.27);text-align:center}.philosophy h2{font-size:1.5rem;color:#e5c894;margin:0 0 13px}.philosophy p{font-size:1rem;line-height:1.7;color:#f0e9df;margin:0 0 11px}.philosophy .signature{font-family:Georgia,"Times New Roman",serif;color:#f3d49e;font-size:1.12rem;margin-top:18px}.hero-footer{position:relative;text-align:center;padding:0 20px 28px;color:#dfd9cb;font-size:.77rem}
+main{max-width:790px;margin:auto;padding:0 24px}.section{padding:80px 0;border-bottom:1px solid var(--line)}.section h2{font-size:clamp(2rem,5vw,3.2rem);line-height:1.2;margin:8px 0 18px}.section-kicker{color:#7d6550;letter-spacing:.18em;text-transform:uppercase;font-size:.73rem;font-weight:700}.lead{font-size:1.13rem;color:#53625e}.reading{font-family:Georgia,"Times New Roman",serif;font-size:clamp(1.09rem,2.6vw,1.26rem);line-height:1.9;max-width:680px;margin:42px auto}.reading p{margin:0 0 1.15em}.reading p:first-child:first-letter{float:left;font-size:3.4em;line-height:.85;padding:7px 10px 0 0;color:#a47848}
+.reading p:nth-child(14n){margin-bottom:1.65em}.ornament{text-align:center;color:#b98e60;letter-spacing:.6em;padding:12px}
+.panel{background:#fffaf2;border:1px solid #e3d7c5;border-radius:18px;padding:clamp(22px,5vw,38px);box-shadow:0 15px 40px rgba(37,52,49,.04)}.panel p{margin:0 0 18px}.panel h3{font-size:1.75rem;margin:6px 0 20px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}.subtle{font-size:.84rem;color:#65716c}.chapters{display:grid;gap:12px;margin-top:28px}.chapter{border:1px solid var(--line);padding:18px 20px;border-radius:12px;display:flex;gap:15px;align-items:center;background:#fffaf2}.chapter b{font-size:.85rem}.chapter span{display:block;color:#75817a;font-size:.8rem}.num{width:36px;height:36px;display:grid;place-items:center;border-radius:50%;background:#e6e1d7;flex-shrink:0}.chapter:first-child .num{background:var(--night);color:#fff}
+footer{text-align:center;background:var(--night);color:#e9e4d9;padding:50px 24px;font-size:.88rem}footer p{max-width:650px;margin:12px auto}footer a{color:#e5c894}
+.experience-toggle{display:inline-block;margin-top:16px;cursor:pointer;color:var(--night);font-weight:650;text-decoration:underline;text-underline-offset:4px}.experience-toggle:focus-visible{outline:3px solid var(--teal);outline-offset:5px}.experience-content{margin-top:20px}.experience-content[hidden]{display:none}.hidden{display:none!important}.notice{border-left:3px solid var(--teal);padding:12px 16px;background:#edf1ec;border-radius:0 8px 8px 0}.mono{width:54px;height:54px;flex-shrink:0}
+@media(max-width:600px){.top{padding:20px}.brandname{font-size:1rem}.hero-main{padding:80px 22px 90px}.section{padding:55px 0}.reading{line-height:1.8}.actions .btn{width:100%}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn{transition:none}}
+.about-links{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:18px}.about-links a{color:#ead4ab;font-size:.87rem;text-underline-offset:4px}.about-panel{background:#fffaf2;border:1px solid #e3d7c5;border-radius:18px;padding:clamp(22px,5vw,38px)}.about-panel h3{font-size:1.5rem;margin:22px 0 8px}.about-panel h3:first-child{margin-top:0}.about-panel p{margin:0 0 14px}.about-panel .subtle{margin-top:14px}
+</style>
+</head>
+<body>
+<header class="hero" id="accueil">
+<div class="top">
+<a class="brand" href="#accueil" aria-label="Linkkus, retour à l’accueil">
+<svg class="mono" viewBox="0 0 100 100" role="img" aria-label="Monogramme provisoire, deux K en miroir"><g fill="none" stroke="#dfc18a" stroke-width="5.5" stroke-linecap="round"><path d="M40 17V83M40 50L15 19M40 50L15 81M60 17V83M60 50L85 19M60 50L85 81"/></g><path d="M50 59C42 53 39 48 40 43C41 37 47 37 50 42C53 37 59 37 60 43C61 48 58 53 50 59" fill="#d88f83"/></svg>
+<span><span class="brandname">LINKKUS</span><small>L’INTELLIGENCE DU CŒUR</small></span>
+</a>
+<span style="font-size:.72rem;letter-spacing:.13em">LES CHRONIQUES DE L’AURORE</span>
+</div>
+<div class="hero-main">
+<span class="eyebrow">Une expérience narrative libre</span>
+<h1>Et si une histoire<br>ouvrait un autre regard&nbsp;?</h1>
+<div class="philosophy" aria-label="Notre philosophie">
+<h2>Bienvenue dans l’univers Linkkus</h2>
+<p>Nous croyons que chaque histoire peut nous aider à mieux comprendre la nôtre.</p>
+<p>À travers les émotions, les rencontres et les choix de personnages parfois si proches de nous, Linkkus invite à porter un autre regard sur soi, sur ses enfants et sur les liens qui nous unissent.</p>
+<p>Ici, il n’y a ni modèle de parent parfait, ni réponse toute faite.</p>
+<p>Seulement des histoires à découvrir, des questions à explorer et la liberté de cheminer à son rythme.</p>
+<p class="signature">Linkkus ne vous dit pas quel parent devenir. Il vous invite à découvrir celui que vous choisissez d’être.</p>
+</div>
+<p class="intro">À Istanbul, Iskender croit comprendre son fils. Jusqu’au jour où une lumière étrange lui rappelle que ressentir n’est pas savoir.</p>
+<p class="tag">Empathos · Épisode 1 sur 7 · À votre rythme</p>
+<div style="margin-top:35px"><a class="btn btn-gold" href="#histoire">Découvrir la première histoire ↓</a></div>
+</div>
+<div class="about-links"><a href="#comprendre">Qui est Kaïros ?</a><a href="#comprendre">Qui porte Linkkus ?</a></div>
+<div class="hero-footer">Lire librement · Sans inscription · Sans exercice obligatoire</div>
+</header>
+<main>
+<section class="section" id="histoire">
+<div class="section-kicker">Cycle des Pères · Empathos · Épisode 01</div>
+<h2>Ce que tu ne dis pas</h2>
+<p class="lead">Istanbul, quartier de Balat — Jours 1 à 11</p>
+<div class="ornament">✦ ✦ ✦</div>
+<article class="reading" aria-label="Récit intégral de l’épisode 1">
+<p>Le tee-shirt était bleu.</p>
+<p>Un bleu ordinaire, légèrement délavé aux épaules, avec une couture blanche près du col. Iskender Elmas l&#x27;avait acheté quelques semaines plus tôt, persuadé qu&#x27;il plairait à son fils.</p>
+<p>Mais ce matin-là, Elyas refusait de le porter.</p>
+<p>— Il me gratte.</p>
+<p>— Tu l&#x27;as déjà mis, mon grand.</p>
+<p>— Oui, mais aujourd&#x27;hui, il me gratte.</p>
+<p>Iskender consulta l&#x27;horloge. Huit heures douze. Dans la cuisine, le thé refroidissait. Par la fenêtre montaient les bruits de Balat : un moteur, le cri d&#x27;un marchand, les ailes d&#x27;un pigeon sur une gouttière.</p>
+<p>— Elyas, nous sommes en retard.</p>
+<p>L&#x27;enfant, onze ans, les cheveux encore humides, resta immobile.</p>
+<p>— Tu m&#x27;écoutes jamais.</p>
+<p>— Bien sûr que je t&#x27;écoute.</p>
+<p>— Non. Tu attends juste que j&#x27;arrête de parler.</p>
+<p>La phrase le traversa plus violemment qu&#x27;il ne l&#x27;aurait imaginé.</p>
+<p>Iskender sentit monter cette irritation familière des matins pressés, des responsabilités qui s&#x27;accumulent, des efforts que personne ne semble remarquer.</p>
+<p>— Je fais de mon mieux.</p>
+<p>— Je sais.</p>
+<p>— Alors pourquoi tu me parles comme ça ?</p>
+<p>Elyas baissa la tête. Ses doigts tiraient nerveusement sur la couture du vêtement.</p>
+<p>Puis il murmura :</p>
+<p>— Je préfère quand je suis chez maman.</p>
+<p>Le silence tomba.</p>
+<p>Iskender aurait pu énumérer tout ce qu&#x27;il faisait pour son fils. Les repas, les devoirs, les rendez-vous déplacés, les semaines réorganisées depuis la séparation.</p>
+<p>Mais aucun mot ne vint.</p>
+<p>Il attrapa ses clés.</p>
+<p>— Mets ton manteau.</p>
+<p>Elyas obéit.</p>
+<p>Et ce fut peut-être cela, le plus douloureux : son fils avait cessé de protester.</p>
+<p>Au cabinet, Iskender savait écouter.</p>
+<p>Thérapeute familial depuis plusieurs années, il connaissait la valeur d&#x27;une hésitation, la différence entre une colère exprimée et une colère dissimulée.</p>
+<p>Ce matin-là, une patiente évoquait une conversation difficile avec sa sœur.</p>
+<p>— Elle voulait surtout me dire ce que je devais faire.</p>
+<p>Iskender attendit.</p>
+<p>— Et qu&#x27;auriez-vous souhaité ?</p>
+<p>— Rien, peut-être. Juste qu&#x27;elle m&#x27;écoute jusqu&#x27;au bout.</p>
+<p>Une phrase résonna immédiatement en lui.</p>
+<p>Tu attends juste que j&#x27;arrête de parler.</p>
+<p>Il revit Elyas, les épaules contractées, agrippé à son tee-shirt.</p>
+<p>Il avait cru gérer un caprice. Peut-être avait-il simplement refusé de considérer un inconfort qu&#x27;il ne comprenait pas.</p>
+<p>Cette pensée l&#x27;accompagna toute la journée.</p>
+<p>Il savait offrir de la patience aux familles qu’il recevait. Mais, auprès de son propre fils, la peur de mal faire le poussait parfois à vouloir apaiser trop vite ce qu’il n’avait pas encore compris.</p>
+<p>Ce soir-là, Istanbul semblait retenir son souffle.</p>
+<p>Elyas avait dîné presque sans parler avant de rejoindre sa chambre. Iskender avait tenté quelques questions, obtenu des réponses brèves, puis renoncé.</p>
+<p>Vers vingt-deux heures, une lumière inhabituelle glissa sur les façades colorées de Balat.</p>
+<p>D&#x27;abord, il crut à un reflet.</p>
+<p>Puis le ciel changea.</p>
+<p>Une immense traînée turquoise se déployait au-dessus des toits, traversée de filaments violets et argentés.</p>
+<p>Des fenêtres s&#x27;ouvrirent. Des téléphones apparurent aux balcons. Quelqu&#x27;un cria dans la rue.</p>
+<p>Une aurore boréale.</p>
+<p>À Istanbul.</p>
+<p>Iskender sortit sur la terrasse, fasciné.</p>
+<p>Un bruit discret retentit derrière lui.</p>
+<p>Cling.</p>
+<p>Sur une étagère du salon reposait une petite boîte en bois sombre, conservée depuis des années.</p>
+<p>Son couvercle vibrait.</p>
+<p>À l&#x27;intérieur se trouvait un collier composé de fragments de verre translucides reliés par une monture argentée.</p>
+<p>Les Larmes de Verre.</p>
+<p>Un ancien souvenir familial dont il connaissait mal l&#x27;histoire.</p>
+<p>Les fragments émettaient maintenant une lumière pâle.</p>
+<p>Iskender tendit la main.</p>
+<p>Lorsqu&#x27;il toucha le collier, le monde sembla vaciller.</p>
+<p>Une sensation de froid lui serra la poitrine.</p>
+<p>Puis vinrent une inquiétude diffuse, une colère fugitive, une tristesse profonde.</p>
+<p>Les émotions se succédaient sans visage, comme plusieurs conversations derrière une porte fermée.</p>
+<p>Iskender s&#x27;appuya contre le meuble.</p>
+<p>Il pensa immédiatement à Elyas.</p>
+<p>Voilà ce qu&#x27;il ressent.</p>
+<p>Cette certitude lui apporta presque un soulagement. Enfin, il comprenait son fils.</p>
+<p>Mais une autre sensation le traversa.</p>
+<p>La peur.</p>
+<p>La sienne, peut-être.</p>
+<p>Celle de ne pas être un père suffisamment présent. De perdre peu à peu sa place. D&#x27;entendre un jour Elyas lui dire qu&#x27;il ne voulait plus revenir.</p>
+<p>Il retira brusquement sa main.</p>
+<p>— Qu&#x27;est-ce que c&#x27;est que ça ?</p>
+<p>Alors une voix se fit entendre.</p>
+<p>Ni tout à fait extérieure, ni entièrement née de ses pensées.</p>
+<p>— Tu ressens quelque chose, Iskender.</p>
+<p>Il se redressa.</p>
+<p>— Qui est là ?</p>
+<p>— Mais sais-tu ce que tu ressens ?</p>
+<p>— Montrez-vous !</p>
+<p>Un silence.</p>
+<p>— On me nomme Kaïros.</p>
+<p>Le collier vibra doucement.</p>
+<p>— Mon fils est triste, dit Iskender. Je le sens.</p>
+<p>— Peut-être.</p>
+<p>— Peut-être ?</p>
+<p>— Tu as perçu de la tristesse. Cela ne te dit ni à qui elle appartient, ni ce qui l&#x27;a fait naître.</p>
+<p>Iskender serra le collier.</p>
+<p>— Alors à quoi sert cet objet ?</p>
+<p>— Tu le découvriras. Mais aucune lumière ne peut parler à la place de celui qui se tait.</p>
+<p>La voix disparut.</p>
+<p>Dehors, l&#x27;aurore poursuivait son mouvement silencieux.</p>
+<p>Iskender resta immobile.</p>
+<p>Pour la première fois, il envisagea que son désir de comprendre Elyas pouvait aussi l&#x27;empêcher de l&#x27;écouter.</p>
+<p>La porte de la chambre était entrouverte.</p>
+<p>Iskender frappa doucement.</p>
+<p>— Je peux entrer ?</p>
+<p>— Si tu veux.</p>
+<p>Elyas était assis sur son lit, les genoux repliés contre lui.</p>
+<p>Iskender prit place dans le fauteuil près de la fenêtre.</p>
+<p>— Je voulais te parler de ce matin.</p>
+<p>L&#x27;enfant ne leva pas les yeux.</p>
+<p>— Quand tu m&#x27;as dit que ton tee-shirt te grattait, je ne t&#x27;ai pas vraiment écouté.</p>
+<p>— Tu pensais que je faisais exprès.</p>
+<p>— Oui. Je crois que je l&#x27;ai pensé.</p>
+<p>— Je fais pas toujours exprès, papa.</p>
+<p>— Je sais.</p>
+<p>Il s&#x27;interrompit.</p>
+<p>— Non. Justement. Je ne sais pas toujours. J&#x27;aurais dû te demander.</p>
+<p>Elyas frotta le coin de sa couverture.</p>
+<p>— Quand tu dis qu&#x27;on est en retard, j&#x27;ai l&#x27;impression que tout ce que je dis devient un problème.</p>
+<p>Iskender sentit revenir l&#x27;oppression dans sa poitrine.</p>
+<p>Il aurait voulu expliquer qu&#x27;il était fatigué, qu&#x27;il essayait simplement de tout organiser.</p>
+<p>Mais il comprit que ces explications pouvaient attendre.</p>
+<p>— Je suis désolé de t&#x27;avoir donné cette impression.</p>
+<p>Elyas haussa les épaules.</p>
+<p>— Et quand j&#x27;ai dit que je préférais chez maman...</p>
+<p>Il s&#x27;arrêta.</p>
+<p>Iskender attendit.</p>
+<p>— J&#x27;étais en colère.</p>
+<p>— Je comprends.</p>
+<p>— Mais ça veut pas dire que je veux plus venir ici.</p>
+<p>Les yeux d&#x27;Iskender s&#x27;humidifièrent.</p>
+<p>— Merci de me le dire.</p>
+<p>Un silence s&#x27;installa.</p>
+<p>Pas encore confortable. Mais personne ne cherchait à avoir raison.</p>
+<p>— Papa ?</p>
+<p>— Oui ?</p>
+<p>— Demain, je peux choisir un autre tee-shirt ?</p>
+<p>Iskender sourit.</p>
+<p>— Bien sûr.</p>
+<p>Elyas reprit son livre.</p>
+<p>La conversation était terminée.</p>
+<p>Aucun embrassement spectaculaire. Aucune promesse capable d&#x27;effacer toutes les maladresses.</p>
+<p>Seulement un père qui avait accepté de ne pas tout savoir.</p>
+<p>Et un enfant qui avait trouvé un peu de place pour parler.</p>
+<p>Les jours suivants, Iskender tenta d’écouter autrement. Il interrompit encore Elyas. La patience s’apprenait aussi chez soi.</p>
+<p>Jour 11.</p>
+<p>L&#x27;aurore avait disparu depuis plusieurs nuits, mais ses images circulaient encore dans le monde entier.</p>
+<p>Iskender gardait désormais les Larmes de Verre dans la poche intérieure de sa veste.</p>
+<p>Depuis cette nuit étrange, le collier réagissait parfois à des émotions qu&#x27;il ne parvenait pas à identifier.</p>
+<p>Dans le tramway, une angoisse soudaine l&#x27;avait presque fait descendre avant son arrêt.</p>
+<p>Au cabinet, une conversation banale avait déclenché une tristesse disproportionnée.</p>
+<p>Il lui arrivait même de ne plus distinguer ses propres émotions de celles qu&#x27;il croyait percevoir.</p>
+<p>Il n&#x27;avait plus entendu Kaïros.</p>
+<p>Ce soir-là, Elyas dessinait à la table de la cuisine.</p>
+<p>Sur la feuille, un personnage minuscule se tenait au milieu d&#x27;une forêt immense, sous un ciel rempli de couleurs.</p>
+<p>— C&#x27;est qui ? demanda Iskender.</p>
+<p>— Personne.</p>
+<p>Le collier vibra contre sa poitrine.</p>
+<p>Une sensation de solitude l&#x27;envahit.</p>
+<p>Il allait demander pourquoi son fils se sentait seul.</p>
+<p>Les mots étaient prêts.</p>
+<p>Puis il s&#x27;arrêta.</p>
+<p>Ressentir n&#x27;est pas savoir.</p>
+<p>Il tira une chaise.</p>
+<p>— Tu veux me raconter ton dessin ?</p>
+<p>Elyas réfléchit.</p>
+<p>— C&#x27;est un garçon qui cherche quelque chose.</p>
+<p>— Quoi ?</p>
+<p>— Il sait pas encore.</p>
+<p>— Et la forêt ?</p>
+<p>— Elle est pas méchante. Mais elle est grande. Alors il a un peu peur.</p>
+<p>Iskender observa les arbres dessinés au crayon.</p>
+<p>— Tu crois qu&#x27;il va trouver son chemin ?</p>
+<p>Elyas contempla sa feuille.</p>
+<p>— Peut-être. S&#x27;il rencontre quelqu&#x27;un qui marche avec lui.</p>
+<p>Iskender resta silencieux.</p>
+<p>Son fils reprit son crayon.</p>
+<p>Dans sa poche, les Larmes de Verre s&#x27;illuminèrent brièvement.</p>
+<p>Puis s&#x27;éteignirent.</p>
+<p>Une voix presque imperceptible effleura sa conscience.</p>
+<p>— Tu as commencé à écouter, Iskender. Il te reste à apprendre ce qui t&#x27;appartient.</p>
+<p>Il posa instinctivement la main sur le collier.</p>
+<p>Bientôt, il découvrirait que certaines émotions pouvaient devenir si puissantes qu&#x27;elles semblaient engloutir tout le reste.</p>
+<p>Mais ce soir-là, il resta simplement auprès de son fils.</p>
+<p>Sans chercher à le comprendre entièrement.</p>
+<p>Sans chercher à le changer.</p>
+<p>Présent.</p>
+<p>Et cela, pour commencer, suffisait.</p>
+</article>
+<div class="ornament">✦</div>
+<div class="actions"><a href="#echo" class="btn btn-dark">Après l’histoire →</a><a href="#chapitres" class="btn btn-outline">Voir le parcours</a></div>
+</section>
+<section class="section" id="echo">
+<div class="section-kicker">Facultatif · L’écho de Kaïros</div>
+<h2>Et vous, qu’avez-vous ressenti&nbsp;?</h2>
+<div class="panel">
+<p>Iskender pensait comprendre son fils. Pourtant, ce qu’il ressentait ne lui disait pas forcément ce qu’Elyas vivait.</p>
+<p>Parfois, nous pensons savoir ce qui se passe dans la tête ou le cœur de quelqu’un. Mais nous pouvons nous tromper.</p>
+<h3>En lisant cette histoire, avez-vous pensé à une situation que vous avez vécue&nbsp;?</h3>
+<p>Peut-être avec votre enfant, un proche ou quelqu’un d’autre.</p>
+<p class="subtle">Vous pouvez prendre un instant pour y penser, ou simplement poursuivre. Il n’y a pas de bonne ou de mauvaise réponse.</p>
+<button class="experience-toggle" id="experienceToggle" type="button" aria-expanded="false" aria-controls="experienceContent">J’aimerais aller un peu plus loin ↓</button>
+<div class="experience-content" id="experienceContent" hidden>
+<h3>Et si nous posions une question&nbsp;?</h3>
+<p>Il nous arrive de croire savoir pourquoi une personne agit ou réagit d’une certaine façon.</p>
+<p>La prochaine fois que cela vous arrive, si le moment s’y prête, essayez simplement de lui demander&nbsp;:</p>
+<p><strong>« Tu veux me raconter ce qui se passe pour toi&nbsp;? »</strong></p>
+<p>Vous découvrirez peut-être quelque chose que vous n’aviez pas imaginé.</p>
+<p>Et si le moment ne s’y prête pas, vous pouvez simplement garder cette idée en tête. Cette expérience est entièrement facultative.</p>
+<div class="notice" style="margin-top:22px">
+<p><strong>Envie de prolonger votre réflexion&nbsp;?</strong></p>
+<p>Vous pouvez ouvrir un dialogue avec une intelligence artificielle, librement et sans obligation de répondre.</p>
+<p class="subtle">Ce bouton ouvre ChatGPT, un service externe, et non un assistant Linkkus intégré. Il ne connaît pas automatiquement l’histoire et peut nécessiter un compte. Évitez de partager des informations personnelles sur des enfants. Ce dialogue ne remplace pas un professionnel. <a href="#comprendre">Comprendre qui est Kaïros</a>.</p>
+<button class="btn btn-dark" id="kButton" type="button">Poursuivre la réflexion avec Kaïros ↗</button>
+<div id="kInfo" class="notice hidden" style="margin-top:22px" role="status">
+<p><strong>Pour échanger avec Kaïros :</strong> une invitation à dialoguer a été copiée dans votre presse-papiers, si votre navigateur l’autorise. ChatGPT s’ouvre séparément. Vous pouvez coller cette invitation, la modifier ou ne pas l’utiliser.</p>
+<button class="btn btn-outline" id="copyAgain" type="button">Copier l’invitation</button>
+</div>
+</div>
+</div>
+<div class="actions"><a class="btn btn-outline" href="#chapitres">Continuer librement →</a></div>
+</div>
+</section>
+<section class="section" id="comprendre">
+<div class="section-kicker">Quelques repères · En toute transparence</div>
+<h2>Qui est Kaïros ? Qui porte Linkkus ?</h2>
+<div class="about-panel">
+<h3>Kaïros, dans l’histoire</h3>
+<p>Dans les Chroniques de l’Aurore, Kaïros est une voix mystérieuse qui accompagne les personnages. Il ne connaît pas toutes les réponses et ne décide pas à leur place. Son rôle dans l’histoire se découvrira au fil des épisodes.</p>
+<h3>Kaïros, pour échanger</h3>
+<p>Sur ce prototype, « Parler à Kaïros » signifie ouvrir ChatGPT, un service d’intelligence artificielle externe. Ce n’est pas le personnage du récit, ni un coach humain. Le service ne connaît pas automatiquement votre histoire ni celle d’Iskender. Vous restez libre de ne pas l’utiliser.</p>
+<h3>Qui porte Linkkus ?</h3>
+<p>Je suis Rédoiane Salah, coach professionnel certifié et fondateur de Linkkus.</p>
+<p>Je crois que chacun possède des ressources pour avancer, comprendre son histoire et choisir son propre chemin. Mon approche s’appuie sur l’écoute, la créativité et le respect de la singularité de chaque personne.</p>
+<p>Avec Linkkus, j’ai souhaité explorer une autre manière d’accompagner les parents : commencer par une histoire, laisser naître une réflexion et permettre à chacun d’aller plus loin, librement.</p>
+<p><a href="https://www.centre-international-coach.fr/nos-coachs-ont-de-multiples-talents-redoiane-salah/" target="_blank" rel="noopener noreferrer">Découvrir mon portrait publié par le Centre International du Coach ↗</a></p>
+<p>Les histoires ne disent pas ce qu’est un « bon parent » et ne promettent pas de transformer les relations familiales. Elles proposent simplement une porte d’entrée, que chacun est libre de franchir ou non.</p>
+<p class="subtle">Cette première version est un prototype de lecture. Les échanges éventuels sur ChatGPT sont soumis aux conditions et règles de confidentialité de ce service, distinct de Linkkus. Linkkus ne reçoit pas les messages saisis dans cette conversation externe.</p>
+</div>
+<div class="actions"><a class="btn btn-outline" href="#chapitres">Découvrir les sept épisodes →</a></div>
+</section>
+<section class="section" id="chapitres">
+<div class="section-kicker">Votre cheminement</div>
+<h2>Sept histoires. Votre rythme.</h2>
+<p class="lead">L’épisode 1 est accessible aujourd’hui. Les suivants rejoindront progressivement cette bibliothèque. Vous pourrez toujours revenir à ce qui vous a touché.</p>
+<div class="chapters">
+<div class="chapter"><div class="num">01</div><div><b>Ce que tu ne dis pas</b><span>À lire et relire librement · Disponible</span></div></div>
+<div class="chapter"><div class="num">02</div><div><b>Ce que tu ressens m’envahit</b><span>Prochainement</span></div></div>
+<div class="chapter"><div class="num">03</div><div><b>Ce que tu n’as pas dit</b><span>Prochainement</span></div></div>
+<div class="chapter"><div class="num">04</div><div><b>Ce que nous leur faisons porter</b><span>Prochainement</span></div></div>
+<div class="chapter"><div class="num">05</div><div><b>Le temps que l’on donne</b><span>Prochainement</span></div></div>
+<div class="chapter"><div class="num">06</div><div><b>La quatrième note</b><span>Prochainement</span></div></div>
+<div class="chapter"><div class="num">07</div><div><b>La lumière qui reste</b><span>Prochainement</span></div></div>
+</div>
+<div class="actions"><a href="#histoire" class="btn btn-dark">Relire l’épisode 1 ↑</a></div>
+</section>
+</main>
+<footer>
+<svg width="65" height="65" viewBox="0 0 100 100" aria-hidden="true"><g fill="none" stroke="#dfc18a" stroke-width="5.5" stroke-linecap="round"><path d="M40 17V83M40 50L15 19M40 50L15 81M60 17V83M60 50L85 19M60 50L85 81"/></g></svg>
+<p><strong>LINKKUS — L’intelligence du cœur</strong></p>
+<p>Une expérience narrative et de réflexion libre. Elle ne constitue ni un diagnostic, ni une psychothérapie, ni une prise en charge médicale.</p>
+<p>Prototype pilote · Monogramme provisoire · Aucun formulaire ni suivi de lecture intégré à cette page. · <a href="#comprendre">Qui sommes-nous ?</a></p>
+</footer>
+<script>
+const experienceToggle=document.getElementById("experienceToggle");
+const experienceContent=document.getElementById("experienceContent");
+experienceToggle.addEventListener("click",()=>{
+ const isOpen=experienceToggle.getAttribute("aria-expanded")==="true";
+ experienceToggle.setAttribute("aria-expanded",String(!isOpen));
+ experienceContent.hidden=isOpen;
+ experienceToggle.textContent=isOpen?"J’aimerais aller un peu plus loin ↓":"Masquer la petite expérience ↑";
+});
+const invitation="Je viens de lire « Ce que tu ne dis pas », premier épisode d’Empathos dans Linkkus. Je souhaite explorer librement ce que cette histoire évoque pour moi, sans interprétation imposée. Pose-moi une seule question ouverte à la fois, et respecte mon choix de ne pas répondre.";
+async function copier(){try{await navigator.clipboard.writeText(invitation);return true}catch(e){return false}}
+document.getElementById("kButton").addEventListener("click",async()=>{
+ const ok=await copier();
+ document.getElementById("kInfo").classList.remove("hidden");
+ if(!ok){document.querySelector("#kInfo p").textContent="La copie automatique n’a pas fonctionné. Vous pouvez copier l’invitation ci-dessous et ouvrir ChatGPT séparément : "+invitation;}
+ window.open("https://chatgpt.com/","_blank","noopener,noreferrer");
+});
+document.getElementById("copyAgain").addEventListener("click",copier);
+</script>
+</body></html>
